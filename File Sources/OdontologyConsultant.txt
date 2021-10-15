@@ -1,0 +1,12 @@
+Nombre	Apellido	Telefono	Correo	Fecha	Hora	Descripcion	Requiere cirugia?	Visita por primera vez?	Ha tenido problemas dentales?
+Jastin	Martinez	809-001-9030	martinezjastin@hotmail.com	12/19/2021	8:29:57 AM	Asistencia 1	Si	Si	No
+Nicolas	Pimentez	809-001-9031	pimentelnicolas@gmail.com	10/12/2021	8:19:42 AM	Asistencia 2	No	Si	No
+Alexis	Colon	809-001-9032	alexiscolon@gmail.com	11/26/2021	11:52:04 AM	Asistencia 3	No	No	Si
+Pedro	Vasquez	809-001-9033	pedrovasquez@gmail.com	11/18/2021	7:09:32 AM	Asistencia 4	No	Si	Si
+Francis	Aquino	809-001-9034	francisaquino@gmail.com	12/16/2021	8:23:58 AM	Asistencia 5	No	Si	Si
+Ezequiel	Molina	809-001-9035	ezequielmolina@gmail.com	10/18/2021	11:39:03 AM	Asistencia 6	No	No	Si
+Francisco	Rojas	809-001-9036	franciscoroja@gmail.com	11/20/2021	12:29:21 PM	Asistencia 7	Si	No	Si
+Daniel	Pena	809-001-9037	danielpena@gmail.com	12/28/2021	11:18:51 AM	Asistencia 8	Si	No	No
+Andres	Parra	809-001-9038	andresparra@gmail.com	10/8/2021	8:31:50 AM	Asistencia 9	Si	No	No
+Erick	Restituyo	809-001-9039	erickrestituyo@gmail.com	10/28/2021	8:19:37 AM	Asistencia 10	Si	No	No
+Cesar	Encarnacion	809-001-9040	cesarencarnacion@gmail.com	12/2/2021	12:51:09 PM	Asistencia 11	No	No	No
