@@ -1,0 +1,203 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1d39db63-c304-4420-8bda-c49fee98e7ed" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Odontology Consultant</ID>
+  <Name>Odontology Consultant</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Odontology Consultant</DataSourceID>
+  <Schema>
+    <xs:schema id="Odontology_x0020_Consultant" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Odontology_x0020_Consultant" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="d197bd0a-631f-408b-a983-4983c16dc1eb">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_appointment_logs" msprop:design-time-name="71f42f84-7753-453b-b29c-c11f659bc0e4" msprop:DbTableName="appointment_logs" msprop:FriendlyName="appointment_logs" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="appoinment_logs_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f28bc0aa-806d-41c1-80c0-7a4db69a57f2" msprop:DbColumnName="appoinment_logs_id" msprop:FriendlyName="appoinment_logs_id" type="xs:int" />
+                  <xs:element name="appointment_id" msprop:design-time-name="4b0eda6a-e6d9-4c29-889a-8f59d8301759" msprop:DbColumnName="appointment_id" msprop:FriendlyName="appointment_id" type="xs:int" />
+                  <xs:element name="date" msprop:design-time-name="c3ede317-5ac9-4264-9684-870c619a657b" msprop:DbColumnName="date" msprop:FriendlyName="date" type="xs:dateTime" />
+                  <xs:element name="time" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="88f5d74f-ddf9-4957-b4bb-e6f05dab18fa" msprop:DbColumnName="time" msprop:FriendlyName="time" type="xs:anyType" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_appointment_status" msprop:design-time-name="fdde598d-3012-48c2-ba96-ad6a20ee680e" msprop:DbTableName="appointment_status" msprop:FriendlyName="appointment_status" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="appointment_status_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="795ed109-a9dc-4291-b8a1-d18c494ab47a" msprop:DbColumnName="appointment_status_id" msprop:FriendlyName="appointment_status_id" type="xs:int" />
+                  <xs:element name="apppoinment_id" msprop:design-time-name="4702371b-b18a-4045-9788-d39a22b9d87f" msprop:DbColumnName="apppoinment_id" msprop:FriendlyName="apppoinment_id" type="xs:int" />
+                  <xs:element name="appointment_status" msprop:design-time-name="b2455460-f127-4e9c-9e31-efb1d533d4d1" msprop:DbColumnName="appointment_status" msprop:FriendlyName="appointment_status">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_center" msprop:design-time-name="8933e424-2164-412d-a4ee-1de8f773c294" msprop:DbTableName="center" msprop:FriendlyName="center" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8a1b16ff-ccbd-45e0-81ea-0e554cfdfebb" msprop:DbColumnName="ID" msprop:FriendlyName="ID" type="xs:int" />
+                  <xs:element name="CenterName" msprop:design-time-name="730a09b1-d1fe-4592-b190-fbaf808ba30b" msprop:DbColumnName="CenterName" msprop:FriendlyName="CenterName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_center_appoinment" msprop:design-time-name="c6cd55c4-e6c8-45b2-94be-6d72d635f89f" msprop:DbTableName="center_appoinment" msprop:FriendlyName="center_appoinment" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CenterID" msprop:design-time-name="15fb1b74-f70f-4460-8576-b6f232b51f9b" msprop:DbColumnName="CenterID" msprop:FriendlyName="CenterID" type="xs:int" />
+                  <xs:element name="AppointmentID" msprop:design-time-name="4928595a-0c7b-4745-a434-ea6b2c727197" msprop:DbColumnName="AppointmentID" msprop:FriendlyName="AppointmentID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_medical_appointment" msprop:design-time-name="4ceff39e-3b97-446c-8222-07d1ee9481b5" msprop:DbTableName="medical_appointment" msprop:FriendlyName="medical_appointment" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="medical_appointment_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e7146bcc-38d9-4de1-b1ef-f949335f9345" msprop:DbColumnName="medical_appointment_id" msprop:FriendlyName="medical_appointment_id" type="xs:int" />
+                  <xs:element name="medical_appointment_description" msprop:design-time-name="0a56703e-fb8f-4228-b5c9-9a14e7357e70" msprop:DbColumnName="medical_appointment_description" msprop:FriendlyName="medical_appointment_description">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="medical_appointment_customer_first_name" msprop:design-time-name="17948937-d13a-4725-8c4a-80175e4c2b86" msprop:DbColumnName="medical_appointment_customer_first_name" msprop:FriendlyName="medical_appointment_customer_first_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="medical_appointment_customer_last_name" msprop:design-time-name="1e8ffc2e-fb3d-4dbc-a3ec-dcf033f1f371" msprop:DbColumnName="medical_appointment_customer_last_name" msprop:FriendlyName="medical_appointment_customer_last_name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="medical_appointment_customer_phone" msprop:design-time-name="32384b49-e141-422a-8c5a-086a283576fc" msprop:DbColumnName="medical_appointment_customer_phone" msprop:FriendlyName="medical_appointment_customer_phone">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="medical_appointment_customer_email" msprop:design-time-name="b98a430e-be2c-4abf-af9c-bee2230dd889" msprop:DbColumnName="medical_appointment_customer_email" msprop:FriendlyName="medical_appointment_customer_email">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="medical_appointment_is_surgery_required" msprop:design-time-name="390abac9-641c-48c1-91e7-a387a4c5100b" msprop:DbColumnName="medical_appointment_is_surgery_required" msprop:FriendlyName="medical_appointment_is_surgery_required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="medical_appointment_is_new_customer" msprop:design-time-name="ee36a3a1-437a-41e3-aa45-9dbceffa84c2" msprop:DbColumnName="medical_appointment_is_new_customer" msprop:FriendlyName="medical_appointment_is_new_customer">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="medical_appointment_has_dental_issues" msprop:design-time-name="11ed4dde-8a60-4a7a-a57a-28723573c9d7" msprop:DbColumnName="medical_appointment_has_dental_issues" msprop:FriendlyName="medical_appointment_has_dental_issues">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="300" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="medical_appointment_date" msprop:design-time-name="e153aaa3-ff13-4432-b86c-9f498c35ed9a" msprop:DbColumnName="medical_appointment_date" msprop:FriendlyName="medical_appointment_date" type="xs:dateTime" />
+                  <xs:element name="medical_appointment_time" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:design-time-name="0efa8f79-0e52-4922-81b0-3022b0280cd8" msprop:DbColumnName="medical_appointment_time" msprop:FriendlyName="medical_appointment_time" type="xs:anyType" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_appointment_logs" />
+          <xs:field xpath="appoinment_logs_id" />
+        </xs:unique>
+        <xs:unique name="dbo_appointment_status_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_appointment_status" />
+          <xs:field xpath="appointment_status_id" />
+        </xs:unique>
+        <xs:unique name="dbo_center_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_center" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_center_appoinment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_center_appoinment" />
+          <xs:field xpath="CenterID" />
+          <xs:field xpath="AppointmentID" />
+        </xs:unique>
+        <xs:unique name="dbo_medical_appointment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_medical_appointment" />
+          <xs:field xpath="medical_appointment_id" />
+        </xs:unique>
+        <xs:keyref name="FK_center_appoinment_medical_appointment" refer="dbo_medical_appointment_Constraint1">
+          <xs:selector xpath=".//dbo_center_appoinment" />
+          <xs:field xpath="AppointmentID" />
+        </xs:keyref>
+        <xs:keyref name="FK_center_appoinment_Center" refer="dbo_center_Constraint1">
+          <xs:selector xpath=".//dbo_center_appoinment" />
+          <xs:field xpath="CenterID" />
+        </xs:keyref>
+        <xs:keyref name="FK_appointment_status_medical_appointment" refer="dbo_medical_appointment_Constraint1">
+          <xs:selector xpath=".//dbo_appointment_status" />
+          <xs:field xpath="appointment_status_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_appoiment_logs_medical_appointment" refer="dbo_medical_appointment_Constraint1">
+          <xs:selector xpath=".//dbo_appointment_logs" />
+          <xs:field xpath="appointment_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Odontology_x0020_Consultant xmlns="" />
+  </Schema>
+</DataSourceView>

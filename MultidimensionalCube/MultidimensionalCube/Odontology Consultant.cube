@@ -1,0 +1,135 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b5fec370-8beb-41e7-b6df-c60ff032cdf4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Odontology Consultant</ID>
+  <Name>Odontology Consultant</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d7345f29-2fde-4f64-8dd5-80fc8f060f95">
+      <ID>Center</ID>
+      <Name>Center</Name>
+      <DimensionID>Center</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="424bef84-2c09-453a-ab87-1a046a33045f">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ce3bb157-cc38-4c2e-a1d7-3e80012ab61d">
+      <ID>Medical Appointment</ID>
+      <Name>Medical Appointment</Name>
+      <DimensionID>Medical Appointment</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ffdbbe32-e286-447a-9634-e3a172b9b1ef">
+          <AttributeID>Medical Appointment Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="75c94fbf-f468-4328-9324-ef1a65463513">
+      <ID>Center Appoinment</ID>
+      <Name>Center Appoinment</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="bfd02b46-a282-4292-9775-41529d1e5752">
+          <ID>Center Appoinment Count</ID>
+          <Name>Center Appoinment Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d0644332-b45f-4287-b93f-1e2183f03f79">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c46540ae-52e3-4154-8af2-332367d3320e">
+              <TableID>dbo_center_appoinment</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3243d6b4-94a9-4dc8-b6f3-d785246dbccf">
+          <CubeDimensionID>Center</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6d86b666-97d6-4276-8952-d8b10de3fbca">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="755b4b66-8ad2-4dae-8e81-7238246b7d4e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e09bccd1-3833-418f-bf7b-cd33f9fa2f82">
+                    <TableID>dbo_center_appoinment</TableID>
+                    <ColumnID>CenterID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6cd53ec7-5df3-405f-a062-f1255a4d9cea">
+          <CubeDimensionID>Medical Appointment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e884b8ad-0ff2-406f-b3d0-a5ecf211def1">
+              <AttributeID>Medical Appointment Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="636ea468-d911-4147-9256-581d0791da32">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62fb482f-3bc5-4801-bc1e-d9aa1faef5e2">
+                    <TableID>dbo_center_appoinment</TableID>
+                    <ColumnID>AppointmentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="ed3a4004-a52b-4268-8045-cd62055f736c">
+    <DataSourceViewID>Odontology Consultant</DataSourceViewID>
+  </Source>
+</Cube>
